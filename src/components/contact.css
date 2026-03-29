@@ -1,0 +1,179 @@
+/* CONTACT SECTION */
+
+.contact-section{
+
+    padding:120px 10%;
+    color:white;
+    text-align:center;
+
+    background: linear-gradient(
+        120deg,
+        #0f0f0f,
+        #1b1b1b,
+        #0f0f0f
+    );
+
+    background-size:300% 300%;
+    animation:bgMove 10s infinite alternate;
+}
+
+@keyframes bgMove{
+
+0%{background-position:0% 50%;}
+100%{background-position:100% 50%;}
+
+}
+
+
+/* TITLE */
+
+.contact-title{
+
+    font-size:42px;
+    margin-bottom:60px;
+}
+
+
+/* GLASS CARD */
+
+.contact-card{
+
+    max-width:500px;
+    margin:auto;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:16px;
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    padding:40px;
+
+    box-shadow:0 10px 40px rgba(0,0,0,0.6);
+
+}
+
+
+/* FORM */
+
+.contact-form{
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+/* INPUTS */
+
+.contact-form input,
+.contact-form textarea{
+
+    padding:12px 15px;
+
+    border-radius:8px;
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    background:transparent;
+
+    color:white;
+
+    font-size:14px;
+
+    outline:none;
+
+    transition:0.3s;
+
+}
+
+
+/* INPUT HOVER */
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    border-color:#38bdf8;
+
+    box-shadow:0 0 10px #38bdf8;
+
+}
+
+
+/* BUTTON */
+
+.contact-form button{
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#38bdf8;
+
+    color:black;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+/* BUTTON HOVER */
+
+.contact-form button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px #38bdf8;
+
+}
+
+
+/* SOCIAL LINKS */
+
+.contact-socials{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+.contact-socials a{
+
+    text-decoration:none;
+
+    color:#38bdf8;
+
+    border:1px solid #38bdf8;
+
+    padding:6px 14px;
+
+    border-radius:6px;
+
+    font-size:14px;
+
+    transition:0.3s;
+
+}
+
+  
+.contact-socials a:hover{
+
+    background:#38bdf8;
+
+    color:black;
+
+}

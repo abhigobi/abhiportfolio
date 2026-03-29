@@ -1,0 +1,107 @@
+.navbar{
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:25px 80px;
+  background:transparent;   /* makes navbar transparent */
+  z-index:1000;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:700;
+  letter-spacing:3px;
+}
+
+.nav-links{
+  display:flex;
+  gap:40px;
+  list-style:none;
+}
+
+.nav-item{
+  cursor:pointer;
+  perspective:600px;
+}
+
+.nav-text{
+  display:inline-block;
+  transform-origin:center;
+  transform-style:preserve-3d;
+}
+.nav-item{
+  cursor:pointer;
+  perspective:600px;
+  font-weight:500;
+  font-size:16px;
+  transition:color 0.3s;
+}
+
+.nav-item:hover{
+  color:#00ffff;
+}
+/* ---------- TABLET ---------- */
+
+@media (max-width:1024px){
+
+.navbar{
+padding:20px 40px;
+}
+
+.nav-links{
+gap:25px;
+}
+
+}
+
+/* Navbar.css — replace your existing @media(max-width:768px) block */
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: block; /* show the ☰ button */
+  }
+
+  .nav-links {
+    display: none;           /* hidden by default */
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    background: #0f0f0f;
+    padding: 10px 0;
+  }
+
+  .nav-links.open {
+    display: flex;           /* shown when hamburger clicked */
+  }
+
+  .nav-item {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+}

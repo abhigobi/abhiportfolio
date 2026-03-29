@@ -1,0 +1,118 @@
+/* SKILLS SECTION */
+
+.skills-section{
+
+    padding:120px 10%;
+    color:white;
+
+    background: linear-gradient(
+        120deg,
+        #0f0f0f,
+        #1b1b1b,
+        #0f0f0f
+    );
+
+    background-size:300% 300%;
+    animation:bgMove 10s infinite alternate;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+100%{background-position:100% 50%;}
+}
+
+
+/* TITLE */
+
+.skills-title{
+
+    text-align:center;
+    font-size:42px;
+    margin-bottom:80px;
+
+}
+
+
+/* GRID */
+
+.skills-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+
+}
+
+
+/* CARD */
+
+.skill-card{
+
+    height:260px;
+
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+
+    border-radius:15px;
+
+    position:relative;
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    transition:0.4s;
+
+}
+
+
+/* HOVER EFFECT */
+
+.skill-card:hover{
+
+    transform:translateY(-10px) scale(1.05);
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.6),
+    0 0 25px #38bdf8;
+
+}
+
+
+/* OVERLAY */
+
+.skill-overlay{
+
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+
+    background:rgba(0,0,0,0.7);
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+
+/* SKILL NAME */
+
+.skill-overlay h3{
+
+    margin-bottom:8px;
+    font-size:18px;
+
+}
+
+
+/* STARS */
+
+.stars{
+
+    color:#38bdf8;
+    font-size:18px;
+    letter-spacing:3px;
+
+}
