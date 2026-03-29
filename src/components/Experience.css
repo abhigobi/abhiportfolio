@@ -201,26 +201,26 @@ box-shadow:
 
 /* MOBILE */
 
-@media(max-width:768px){
+/* Experience.css — replace your existing @media(max-width:768px) block entirely */
+@media (max-width: 768px) {
+  .timeline::after {
+    left: 20px;                  /* move center line to left side */
+  }
 
-.timeline::after{
-left:20px;
-}
+  .timeline-item {
+    width: 100%;
+    padding-left: 52px;          /* space for dot + line */
+    padding-right: 16px;
+    left: 0 !important;          /* override both .left and .right positioning */
+    text-align: left !important;
+  }
 
-.timeline-item{
-width:100%;
-padding-left:60px;
-padding-right:20px;
-}
-
-.timeline-item.left,
-.timeline-item.right{
-left:0;
-text-align:left;
-}
-
-.timeline-dot{
-left:11px;
-}
-
+  /* Reset dot position for ALL items — overrides both left/right rules */
+  .timeline-item .timeline-dot,
+  .timeline-item.left .timeline-dot,
+  .timeline-item.right .timeline-dot {
+    left: 11px !important;       /* pin dot to the left line */
+    right: auto !important;      /* cancel the right:-9px from .left items */
+    top: 28px;
+  }
 }
