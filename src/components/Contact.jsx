@@ -1,50 +1,50 @@
-import React from "react";
-import "./contact.css";
+  import React from "react";
+  import "./contact.css";
 
-const Contact = () => {
-  return (
-    <section className="contact-section" id="contact">
+  const Contact = () => {
+    return (
+      <section className="contact-section" id="contact">
 
-      <h2 className="contact-title">Contact Me</h2>
+        <h2 className="contact-title">Contact Me</h2>
 
-      <div className="contact-card">
+        <div className="contact-card">
 
-        <form className="contact-form">
+          <form className="contact-form">
 
-          <input
-            type="text"
-            placeholder="Your Name"
-            required
-          />
+            <input
+              type="text"
+              placeholder="Your Name"
+              required
+            />
 
-          <input
-            type="email"
-            placeholder="Your Email"
-            required
-          />
+            <input
+              type="email"
+              placeholder="Your Email"
+              required
+            />
 
-          <textarea
-            placeholder="Your Message"
-            rows="5"
-            required
-          />
+            <textarea
+              placeholder="Your Message"
+              rows="5"
+              required
+            />
 
-          <button type="submit">Send Message</button>
+            <button type="submit">Send Message</button>
 
-        </form>
+          </form>
 
-        <div className="contact-socials">
+          <div className="contact-socials">
 
-          <a href="#">Github</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Email</a>
+            <a href="#">Github</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Email</a>
+
+          </div>
 
         </div>
 
-      </div>
+      </section>
+    );
+  };
 
-    </section>
-  );
-};
-
-export default Contact;
+  export default Contact;
