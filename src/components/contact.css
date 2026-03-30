@@ -168,7 +168,19 @@
     transition:0.3s;
 
 }
+.form-success {
+  color: #4ade80;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 4px;
+}
 
+.form-error {
+  color: #f87171;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 4px;
+}
   
 .contact-socials a:hover{
 

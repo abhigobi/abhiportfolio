@@ -61,7 +61,7 @@ const Experience = () => {
 
             <div className="extra-info">
               <p>
-                Graduated with 93%. Participated in anchoring,
+                Passed with 93%. Participated in anchoring,
                 competitions and various cultural activities.
               </p>
             </div>
@@ -80,7 +80,7 @@ const Experience = () => {
 
             <div className="extra-info">
               <p>
-                Graduated with 95.83 % in boards.
+                Passed with 95.83 % in boards.
                 Developed strong interest in computer science
                 and technology.
               </p>
@@ -112,7 +112,7 @@ const Experience = () => {
           <div className="timeline-dot"></div>
 
           <div className="timeline-content">
-            <h3>2024 – Now Joined LTM</h3>
+            <h3>2025 – Now Joined LTM</h3>
 
             <p className="brief">
               Full time Engineer at LTM.
